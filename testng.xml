@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SauceDemo Suite">
-    <test name="E2E Checkout Test">
-        <classes>
-            <class name="SauceDemoE2EinTESTNG"/>
+    <test name="Regression Execution">
+        <!--<classes>
+            <class name="SoftAssertionExample"/>
         </classes>
+        -->
+            <groups>
+                <run>
+                    <include name="regression"/> </run>
+            </groups>
+            <classes>
+                <class name="AssigningGroupsTESTNG"/>
+            </classes>
     </test>
 </suite>
